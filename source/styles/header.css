@@ -1,0 +1,113 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 88, 122);
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+header > a {
+  width: auto;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(168, 230, 255);
+  background-color: rgb(0, 82, 114);
+  padding: 0.5rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+header > a:hover {
+  background-color: rgb(84, 176, 212);
+  border-radius: 20px;
+  color: rgb(0, 82, 114);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+header > a h1 {
+  margin-block: 0;
+  margin-inline: 0;
+  margin-left: 0.4rem;
+  padding: 0;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+header > a img {
+  border-radius: 50%;
+}
+
+header > ul {
+  text-align: right;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  list-style: none;
+}
+
+header > ul li {
+  padding-left: 0.5rem;
+}
+
+header > ul li a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: rgb(168, 230, 255);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+header > ul li a:hover {
+  background-color: rgb(84, 176, 212);
+  color: rgb(0, 82, 114);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 990px) {
+  header > a h1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  header > a img {
+    width: 30px;
+  }
+
+  header > ul li a {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 531px) {
+  header > a img {
+    width: 30px;
+  }
+
+  header > ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header > a img {
+    width: 25px;
+  }
+
+  header > ul li a {
+    font-size: 0.75rem;
+  }
+}

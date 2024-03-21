@@ -1,0 +1,139 @@
+/* Greetings block */
+
+.greetings {
+  background-image: url("/source/images/background.gif");
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.upper-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.blur {
+  display: inline;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  border-radius: 40px;
+  border-color: rgb(0, 82, 114);
+  border-style: solid;
+  border-width: 5px;
+  padding: 20px;
+}
+
+.upper-text h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: rgb(84, 176, 212);
+}
+
+/* Cars block */
+
+.about-cars {
+  background-color: rgba(168, 230, 255, 0.4);
+  padding: 0.2rem 0 0.4rem 0;
+  position: relative;
+  overflow: hidden;
+  border-style: solid none none none;
+  border-color: rgb(0, 88, 122);
+  border-width: 30px;
+}
+
+.cars-row {
+  margin: 0;
+  margin-block: 0;
+  height: 30vh;
+  width: 100%;
+  position: relative;
+}
+
+.car-in-rows {
+  display: grid;
+  grid-auto-flow: column;
+  height: 100%;
+  width: 200%;
+  margin: 0.2rem 0;
+  transition: margin 0.2s;
+  overflow: hidden;
+}
+
+.car-in-row {
+  width: 24.3vw;
+  margin: 0;
+  margin-block: 0;
+  border-style: solid;
+  border-color: rgb(0, 82, 114);
+  border-radius: 3rem;
+  margin: 0 0.04rem;
+  overflow: hidden;
+  background-color: black;
+}
+
+.car-in-row a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-decoration: none;
+  color: white;
+}
+
+.car-in-row img {
+  width: 100%;
+  height: 100%;
+}
+
+.car-in-row span {
+  position: absolute;
+  font-size: 3rem;
+}
+
+.arrows {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: visible;
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-left:hover {
+  transition: opacity 0.1s;
+  opacity: 1;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.arrow-right:hover {
+  transition: opacity 0.1s;
+  opacity: 1;
+}
