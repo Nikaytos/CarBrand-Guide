@@ -96,8 +96,8 @@
 
 .main input:focus ~ label,
 .main textarea:focus ~ label,
-.main input:valid ~ label,
-.main textarea:valid ~ label {
+.main input:not(:placeholder-shown) ~ label,
+.main textarea:not(:placeholder-shown) ~ label {
   font-size: 0.75em;
   color: black;
   top: -10px;

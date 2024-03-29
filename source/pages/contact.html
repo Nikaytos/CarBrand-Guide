@@ -33,27 +33,27 @@
     <section class="main">
       <h1>Contact Us</h1>
       <h4>Submit your queries below</h4>
-      <div class="input-container">
+      <form id="contact-form" class="input-container">
         <div class="styled-input">
-          <input type="text" required />
+          <input id="name" type="text" placeholder="" required />
           <label>Name</label>
         </div>
         <div class="space">
           <div class="styled-input">
-            <input type="text" required />
+            <input id="email" type="email" placeholder="" required />
             <label>Email</label>
           </div>
           <div class="styled-input" style="float: right">
-            <input type="text" required />
+            <input id="phone" type="tel" placeholder="" required />
             <label>Phone Number</label>
           </div>
         </div>
         <div class="styled-input">
-          <textarea required></textarea>
+          <textarea id="message" placeholder="" required></textarea>
           <label>Message</label>
         </div>
-        <div class="submit-btn">Send Message</div>
-      </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
     </section>
     <footer>
       <h1>CarBrand Guide</h1>
@@ -75,5 +75,6 @@
       </div>
       <p>© Copyright 2024 by Panasov Nikita || All rights reserved</p>
     </footer>
+    <script src="../js/contact.js"></script>
   </body>
 </html>
