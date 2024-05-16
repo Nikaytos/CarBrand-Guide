@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" />
+    <link rel="icon" href="source/images/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="source/styles/style.css" />
+    <link rel="stylesheet" href="source/styles/header.css" />
+    <link rel="stylesheet" href="source/styles/footer.css" />
+    <link rel="stylesheet" href="source/styles/offers.css" />
+    <title>CarBrand Guide</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="source/images/logo.jpg"
+          alt="CarBrand Guide logo"
+          width="50px"
+        />
+        <h1>CarBrand Guide</h1>
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="source/pages/gallery.html">Gallery</a></li>
+        <li><a href="source/pages/about.html">About</a></li>
+        <li><a href="source/pages/contact.html">Contact</a></li>
+      </ul>
+    </header>
+    <section class="main">
+      <h2>Car Brand Suggestions</h2>
+      <div>
+        <h3>Suggest a Car Brand</h3>
+        <form id="suggest-car-brand-form">
+          <label for="name">Name of car brand:</label>
+          <input type="text" id="name" required />
+          <label for="logo">Logo of car brand:</label>
+          <input type="text" id="logo" />
+          <label for="description"
+            >Write some wish, what we need to know about:</label
+          >
+          <textarea id="description" rows="5"></textarea>
+          <label for="links_on_sources">Links on sources:</label>
+          <textarea id="links_on_sources" rows="3"></textarea>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" />
+          <button id="add-car-button" type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="edit">
+        <h3>Edit Suggestion</h3>
+        <form id="edit-suggestion-form">
+          <input type="hidden" id="edit-id" />
+          <label for="name">Name of car brand:</label>
+          <input type="text" id="edit-name" required />
+          <label for="logo">Logo of car brand:</label>
+          <input type="text" id="edit-logo" />
+          <label for="description"
+            >Write some wish, what we need to know about:</label
+          >
+          <textarea id="edit-description" rows="5"></textarea>
+          <label for="links_on_sources">Links on sources:</label>
+          <textarea id="edit-links_on_sources" rows="3"></textarea>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="edit-quantity" />
+          <button id="update-btn" class="update-btn">Update</button>
+          <button id="cancel-btn" class="cancel-btn">Cancel</button>
+        </form>
+      </div>
+      <div id="list">
+        <h3>List of Suggestions</h3>
+        <ul id="car-brand-list">
+          <!-- <li class="item">
+            <ul class="info">
+              <li>
+                <img
+                  src="https://www.carlogos.org/car-logos/honda-logo-2000.png"
+                  alt=""
+                  width="75px"
+                />
+              </li>
+              <li class="name">Honda</li>
+            </ul>
+            <div class="buttons">
+              <button class="delails-btn">Details</button>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </div>
+          </li>-->
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <h1>CarBrand Guide</h1>
+      <h3>Keletska, 98, Vinnytsia, Vinnytska obl., 21012, Ukraine</h3>
+      <h3>
+        +380 (68) 791 15 84 -
+        <a href="mailto:prernaranjan351@gmail.com">info@carbrandguide.com</a>
+      </h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img
+            src="source/images/facebook_icon.png"
+            width="40px"
+            height="40px"
+          />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img
+            src="source/images/instagram_icon.png"
+            width="40px"
+            height="40px"
+          />
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><img
+            src="source/images/linkedin_icon.png"
+            width="40px"
+            height="40px"
+          />
+        </a>
+      </div>
+      <p>© Copyright 2024 by Panasov Nikita || All rights reserved</p>
+    </footer>
+    <script src="source/js/offers.js"></script>
+  </body>
+</html>

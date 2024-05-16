@@ -8,14 +8,37 @@
   font-size: 1.25rem;
 }
 
+.suggestions {
+  text-align: end;
+  border-style: none none solid none;
+  border-color: black;
+  padding: 2rem;
+}
+
+.suggestions_btn {
+  border-radius: 5px;
+  background-color: rgb(0, 88, 122);
+  padding: 0.5rem 1rem;
+  display: inline;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.suggestions a {
+  text-decoration: none;
+  color: white;
+}
+
+.suggestions .suggestions_btn:hover {
+  transform: translateY(1px);
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
 .country {
   border-style: none none solid none;
   border-color: black;
   padding: 2rem 2rem;
-}
-
-.country:first-child {
-  border-style: solid none solid none;
 }
 
 .country-name {

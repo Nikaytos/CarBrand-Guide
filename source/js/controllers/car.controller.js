@@ -22,6 +22,7 @@ const getCar = async (req, res) => {
 const postCar = async (req, res) => {
   try {
     const car = await Car.create(req.body);
+    await car.save();
     res.status(201).json(car);
   } catch (err) {
     res.status(500).json({ message: err.message });

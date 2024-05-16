@@ -4,14 +4,22 @@ const CarSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, "Car name is required"],
+      required: [true, "Name of brand is required"],
     },
-    image: {
+    logo: {
       type: String,
       required: false,
     },
     description: {
       type: String,
+      required: false,
+    },
+    links_on_sources: {
+      type: String,
+      required: false,
+    },
+    quantity: {
+      type: Number,
       required: false,
     },
   },
