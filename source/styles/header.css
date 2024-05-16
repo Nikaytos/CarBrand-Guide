@@ -82,32 +82,25 @@ header > ul li a:hover {
   }
 }
 
-@media screen and (max-width: 660px) {
-  header > a img {
-    width: 30px;
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header > a {
+    display: none;
+  }
+
+  header > ul {
+    margin-top: 0.5rem;
   }
 
   header > ul li a {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 531px) {
-  header > a img {
-    width: 30px;
-  }
-
+@media screen and (max-width: 400px) {
   header > ul li a {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  header > a img {
-    width: 25px;
-  }
-
-  header > ul li a {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 }

@@ -6,6 +6,10 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   text-align: justify;
   font-size: 1.25rem;
+  background-image: url("../images/gallery.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .suggestions {
@@ -13,6 +17,7 @@
   border-style: none none solid none;
   border-color: black;
   padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .suggestions_btn {
@@ -39,6 +44,7 @@
   border-style: none none solid none;
   border-color: black;
   padding: 2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .country-name {
@@ -50,6 +56,7 @@
   margin-left: 0.5rem;
   font-size: 2rem;
   font-weight: bold;
+  color: white;
 }
 
 .items {
@@ -85,4 +92,30 @@
 .items span {
   cursor: pointer;
   margin-left: 0.5rem;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 0;
+    margin: 0;
+  }
+  .suggestions {
+    text-align: center;
+  }
+  .country-name {
+    justify-content: center;
+  }
+
+  .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    margin: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
 }

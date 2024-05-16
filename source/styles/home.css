@@ -118,6 +118,7 @@
   align-items: center;
   cursor: pointer;
   pointer-events: visible;
+  z-index: 1;
 }
 
 .arrow-left {
@@ -136,4 +137,26 @@
 .arrow-right:hover {
   transition: opacity 0.1s;
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .blur {
+    width: 75%;
+  }
+
+  .upper-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .car-in-row {
+    width: 50vw;
+  }
+
+  .car-in-row span {
+    font-size: 2rem;
+  }
+
+  .car-in-rows {
+    width: 400%;
+  }
 }

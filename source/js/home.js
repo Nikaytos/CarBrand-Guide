@@ -8,12 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
     handleArrowClick(arrowLeft, carsRow);
     handleArrowClick(arrowRight, carsRow);
   });
-    
+
   function handleArrowClick(arrow, carsRow) {
     arrow.addEventListener("click", function () {
       let currentMargin = parseFloat(getComputedStyle(carsRow).marginLeft);
       let maxOffset = -carsRow.offsetWidth + carsRow.parentElement.offsetWidth;
-      let newMargin = Math.min(Math.max(currentMargin + (arrow.classList.contains("arrow-left") ? carWidth : -carWidth), maxOffset), 0);
+      let newMargin = Math.min(
+        Math.max(
+          currentMargin +
+            (arrow.classList.contains("arrow-left") ? carWidth : -carWidth),
+          maxOffset
+        ),
+        0
+      );
       carsRow.style.marginLeft = `${newMargin}px`;
     });
   }

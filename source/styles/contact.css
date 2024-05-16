@@ -106,3 +106,46 @@
   left: -10px;
   transition: 0.225s;
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .main h1 {
+    font-size: 32px;
+  }
+
+  .main input,
+  .main textarea {
+    padding: 0;
+    border: 0;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: white;
+    color: rgb(0, 82, 114);
+    border-radius: 4px;
+  }
+
+  .main .input-container {
+    margin: 10px;
+  }
+
+  .main .styled-input label {
+    padding: 0;
+    font-size: 0.95rem;
+  }
+
+  .main input:focus ~ label,
+  .main textarea:focus ~ label,
+  .main input:not(:placeholder-shown) ~ label,
+  .main textarea:not(:placeholder-shown) ~ label {
+    font-size: 0.75em;
+    color: rgba(0, 0, 0, 0);
+    top: 10px;
+    left: 10px;
+    transition: 0.225s;
+  }
+}

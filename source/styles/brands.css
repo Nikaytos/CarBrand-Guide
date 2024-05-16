@@ -24,10 +24,10 @@
   flex-direction: column;
   align-items: center;
   color: rgb(146, 148, 149);
-  font-size: 1rem;
 }
 
 .img-set img {
+  width: 400px;
   border-radius: 2rem;
   margin-bottom: 0.4rem;
 }
@@ -49,4 +49,19 @@
 .table tr td {
   border: 1px solid #a2a9b1;
   padding: 0.2em 0.4em;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin: 0;
+    padding: 0;
+  }
+
+  .img-set {
+    width: 100%;
+  }
+
+  .img-set img {
+    width: 100%;
+  }
 }
