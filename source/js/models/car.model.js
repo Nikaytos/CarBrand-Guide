@@ -17,11 +17,7 @@ const CarSchema = new mongoose.Schema(
     links_on_sources: {
       type: String,
       required: false,
-    },
-    quantity: {
-      type: Number,
-      required: false,
-    },
+    }
   },
   {
     timestamps: true,
