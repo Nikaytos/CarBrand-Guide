@@ -19,6 +19,7 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
+
     <noscript
       ><link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -26,6 +27,9 @@
     /></noscript>
 
     <!-- Critical CSS -->
+    <link rel="stylesheet" href="source/styles/header.css" />
+    <link rel="stylesheet" href="source/styles/footer.css" />
+    <link rel="stylesheet" href="source/styles/home.css" />
     <link rel="stylesheet" href="source/styles/style.css" />
     <title>CarBrand Guide</title>
   </head>
@@ -35,8 +39,10 @@
         <img
           src="source/images/logo.jpg"
           alt="CarBrand Guide logo"
-          width="50px"
+          width="50"
+          height="50"
         />
+
         <h1>CarBrand Guide</h1>
       </a>
       <ul>
@@ -48,7 +54,6 @@
     </header>
     <section class="greetings">
       <video autoplay muted loop playsinline>
-        <source src="/source/images/background.mp4" type="video/mp4" />
         <source src="/source/images/background.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
@@ -319,31 +324,6 @@
       </div>
       <p>© Copyright 2024 by Panasov Nikita || All rights reserved</p>
     </footer>
-
-    <!-- Defer non-critical CSS -->
-    <link
-      rel="stylesheet"
-      href="source/styles/header.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link
-      rel="stylesheet"
-      href="source/styles/footer.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link
-      rel="stylesheet"
-      href="source/styles/home.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="source/styles/header.css" />
-      <link rel="stylesheet" href="source/styles/footer.css" />
-      <link rel="stylesheet" href="source/styles/home.css" />
-    </noscript>
 
     <!-- Defer JavaScript -->
     <script defer src="/source/js/home.js"></script>
