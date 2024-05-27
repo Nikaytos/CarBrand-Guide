@@ -11,16 +11,22 @@
         automotive brands."
     />
     <link rel="icon" href="source/images/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload Google Fonts -->
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet"
+    /></noscript>
+
+    <!-- Critical CSS -->
     <link rel="stylesheet" href="source/styles/style.css" />
-    <link rel="stylesheet" href="source/styles/header.css" />
-    <link rel="stylesheet" href="source/styles/footer.css" />
-    <link rel="stylesheet" href="source/styles/home.css" />
     <title>CarBrand Guide</title>
   </head>
   <body>
@@ -41,6 +47,11 @@
       </ul>
     </header>
     <section class="greetings">
+      <video autoplay muted loop playsinline>
+        <source src="/source/images/background.mp4" type="video/mp4" />
+        <source src="/source/images/background.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
       <div class="upper-text">
         <div class="blur" id="parallaxText">
           <h1>Welcome to CarBrand Guide</h1>
@@ -309,7 +320,33 @@
       <p>© Copyright 2024 by Panasov Nikita || All rights reserved</p>
     </footer>
 
-    <script src="/source/js/home.js"></script>
-    <script src="/source/js/parallax-app.js"></script>
+    <!-- Defer non-critical CSS -->
+    <link
+      rel="stylesheet"
+      href="source/styles/header.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="source/styles/footer.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="source/styles/home.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="source/styles/header.css" />
+      <link rel="stylesheet" href="source/styles/footer.css" />
+      <link rel="stylesheet" href="source/styles/home.css" />
+    </noscript>
+
+    <!-- Defer JavaScript -->
+    <script defer src="/source/js/home.js"></script>
+    <script defer src="/source/js/parallax-app.js"></script>
   </body>
 </html>
